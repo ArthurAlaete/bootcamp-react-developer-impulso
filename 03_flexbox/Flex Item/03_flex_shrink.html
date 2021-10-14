@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink</title>
+    <style>
+        .flex-container {
+            display: flex;
+            border: 2px solid black;
+            min-width: 350px;
+        }
+
+        .item {
+            background-color: orangered;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .shrink {
+            flex-shrink: 1;
+        }
+
+
+        /* Não permite comprimir o elemento a menos de 100px */
+        .shrink-0 {
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+
+        .flex-grow-1 {
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Flex Shrink 1</h2>
+    <div class="flex-container">
+        <div class="item shrink flex-grow-1">A</div>
+        <div class="item shrink flex-grow-1">BB</div>
+        <div class="item shrink flex-grow-1">C</div>
+        <div class="item shrink flex-grow-1">DEF</div>
+    </div>
+
+    <h2>Flex Shrink 0</h2>
+    <div class="flex-container">
+        <div class="item shrink-0 flex-grow-1">A</div>
+        <div class="item shrink flex-grow-1">BBBBBBB</div>
+        <div class="item shrink flex-grow-1">CcccccccccCCCCCCCC</div>
+        <div class="item shrink flex-grow-1">DEF</div>
+    </div>
+</body>
+</html>

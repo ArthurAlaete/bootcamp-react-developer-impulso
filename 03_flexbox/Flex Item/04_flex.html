@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .flex-container {
+            display: flex;
+            border: 2px solid black;
+            min-width: 400px;
+        }
+
+        .item {
+            background-color: orangered;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .largura {
+            width: 200px;
+        }
+
+        .flex-1 {
+            flex: 1;
+            /* grow = 1, shrink = 1, basis = 0 */
+        }
+
+        .flex-2 {
+            flex: 2;
+            /* grow = 1, shrink = 1, basis = 0 */
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Flex 1</h2>
+    <div class="flex-container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-1">BB</div>
+        <div class="item flex-1">C</div>
+        <div class="item flex-1">DEF</div>
+    </div>
+
+    <h2>Flex 2</h2>
+    <div class="flex-container">
+        <div class="item flex-2">A</div>
+        <div class="item flex-2">BB</div>
+        <div class="item flex-1">C</div>
+        <div class="item flex-1">DEF</div>
+    </div>
+
+    <h2>width ignorado, basis = 0</h2>
+    <div class="flex-container">
+        <div class="item  largura flex-1">A</div>
+        <div class="item  largura flex-1">BB</div>
+        <div class="item  largura flex-1">C</div>
+        <div class="item  largura flex-1">DEF</div>
+    </div>
+
+</body>
+</html>

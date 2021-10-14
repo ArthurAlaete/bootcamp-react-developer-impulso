@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Order</title>
+    <style>
+        .flex-container {
+            display: flex;
+            border: 2px solid black;
+            min-width: 400px;
+            height: 200px;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .item {
+            /* Ocupa o tamanho proporcional ao container */
+            flex: 1;
+            background: purple;
+            border-radius: 8px;
+            font-size: 24px;
+            text-align: center;
+            color: white;
+            margin: 5px;
+        }
+
+        .align-container {
+            align-items: center;
+        }
+
+        .flex-start {
+            align-self: flex-start;
+        }
+
+        .flex-end {
+            align-self: flex-end;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Row: Align Self</h2>
+    <div class="flex-container align-container">
+        <div class="item flex-start">Start</div>
+        <div class="item baseline">baseline</div>
+        <div class="item flex-end">End</div>
+        <div class="item center">Center</div>
+        <div class="item stretch">Stretch</div>
+    </div>
+
+    <h2>Column: Align Self</h2>
+    <div class="flex-container align-container column">
+        <div class="item flex-start">Start</div>
+        <div class="item baseline">baseline</div>
+        <div class="item flex-end">End</div>
+        <div class="item center">Center</div>
+        <div class="item stretch">Stretch</div>
+    </div>
+</body>
+</html>

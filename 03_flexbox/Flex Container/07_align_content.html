@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+    <style>
+        .container {
+            max-width: 300px;
+            height: 400px;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            border: solid 1px black;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .item {
+            background-color: orange;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            margin: 5px;
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .flex-start {
+            align-content: flex-start;
+        }
+
+        .flex-end {
+            align-content: flex-end;
+        }
+
+        .space-between {
+            align-content: space-between;
+        }
+
+        .space-around {
+            align-content: space-around;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Row:</h1>
+    <h2>Stretch</h2>
+    <section class="container stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2 Item 2 Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3</div>
+        <div class="item">Item 4 Item 4 Item 4 Item 4 Item 4</div>
+        <div class="item">Item 5 Item 5</div>
+        <div class="item">Item 6 Item 6 Item 6</div>
+        <div class="item">Item 7 Item 7 Item 7</div>
+    </section>
+
+    <h2>Center</h2>
+    <section class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2 Item 2 Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3</div>
+        <div class="item">Item 4 Item 4 Item 4 Item 4 Item 4</div>
+        <div class="item">Item 5 Item 5</div>
+        <div class="item">Item 6 Item 6 Item 6</div>
+        <div class="item">Item 7 Item 7 Item 7</div>
+    </section>
+
+    <h2>Flex Start</h2>
+    <section class="container flex-start">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2 Item 2 Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3</div>
+        <div class="item">Item 4 Item 4 Item 4 Item 4 Item 4</div>
+        <div class="item">Item 5 Item 5</div>
+        <div class="item">Item 6 Item 6 Item 6</div>
+        <div class="item">Item 7 Item 7 Item 7</div>
+    </section>
+
+    <h2>Flex End</h2>
+    <section class="container flex-end">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2 Item 2 Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3</div>
+        <div class="item">Item 4 Item 4 Item 4 Item 4 Item 4</div>
+        <div class="item">Item 5 Item 5</div>
+        <div class="item">Item 6 Item 6 Item 6</div>
+        <div class="item">Item 7 Item 7 Item 7</div>
+    </section>
+
+    <h2>Space Between</h2>
+    <section class="container space-between">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2 Item 2 Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3</div>
+        <div class="item">Item 4 Item 4 Item 4 Item 4 Item 4</div>
+        <div class="item">Item 5 Item 5</div>
+        <div class="item">Item 6 Item 6 Item 6</div>
+        <div class="item">Item 7 Item 7 Item 7</div>
+    </section>
+
+    <h2>Space Around</h2>
+    <section class="container space-around">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2 Item 2 Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3</div>
+        <div class="item">Item 4 Item 4 Item 4 Item 4 Item 4</div>
+        <div class="item">Item 5 Item 5</div>
+        <div class="item">Item 6 Item 6 Item 6</div>
+        <div class="item">Item 7 Item 7 Item 7</div>
+    </section>
+
+
+</body>
+</html>

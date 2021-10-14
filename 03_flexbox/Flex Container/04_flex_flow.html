@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Flow</title>
+    <style>
+        .flex-container {
+            display: flex;
+            max-width: 500px;
+            border: solid 1px black;
+        }
+
+        .default {
+            flex-flow: row nowrap;
+        }
+
+        .wrap {
+            flex-flow: row wrap;
+        }
+
+        .wrap-reverse {
+            flex-flow: row wrap-reverse;
+        }
+
+        .nowrap-reverse {
+            flex-flow: row-reverse nowrap;
+        }
+
+        .item {
+            background-color: violet;
+            font-size: 24px;
+            min-width: 98px;
+            height: 50px;
+            text-align: center;
+            color: white;
+            line-height: 50px;
+            margin: 2px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Default</h1>
+    <div class="flex-container default">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <h1>Wrap</h1>
+    <div class="flex-container wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <h1>Wrap Reverse</h1>
+    <div class="flex-container wrap-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <h1>nowrap Reverse</h1>
+    <div class="flex-container nowrap-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>
