@@ -1,0 +1,57 @@
+body {
+    background-color: rgba(252, 243, 243, 0.76);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#title {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.header-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 15px;
+    border: solid 2px #CBCBCB;
+    border-radius: 8PX;
+    margin: 15px;
+}
+
+.post-image {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.post-content {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+
+#title, .subtitle, .post-title {
+    color: rgb(37, 35, 35);
+}
+
+.post-title {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+.contact-list {
+    list-style-type: disc;
+}
+
+.contact-list li a {
+    text-decoration: none;
+    
+}
