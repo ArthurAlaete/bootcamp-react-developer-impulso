@@ -3,6 +3,6 @@ Repositório para organização de arquivos, desafios e links úteis do Bootcamp
 
 ## Links úteis
 
-[Sintaxe Básica Markdown](https://www.markdownguide.org/basic-syntax/)
+[Sintaxe Básica Markdown](https://www.markdownguide.org/basic-syntax/)<br>
 [The Movie Database](https://www.themoviedb.org/?language=pt-BR)
 
