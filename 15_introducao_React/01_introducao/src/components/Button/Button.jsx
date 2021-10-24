@@ -1,6 +1,6 @@
 import React from "react";
 
-function Button (props) {
+const Button = (props) => {
 
     function alertar() {
         alert('Alerta!!')
@@ -9,5 +9,6 @@ function Button (props) {
     return (
         <button onClick={() => alertar()}>Clique em mim...</button>
     )
+    
 }
 export default Button;

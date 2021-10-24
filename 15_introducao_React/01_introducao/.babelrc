@@ -1,0 +1,9 @@
+// Arquivo padrão onde o babel vai ler todos os 
+// presets e plugins dentro dele.
+{   
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+    ]
+    // "plugins": []   //Não estamos utilizando nenhum plugin aqui.
+}
