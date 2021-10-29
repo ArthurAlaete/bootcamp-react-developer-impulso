@@ -1,0 +1,20 @@
+React: Práticas avançadas em projetos 
+
+-=-=-=-=-= CICLO DE VIDA -=-=-=-=-=
+
+Inicialização: Recebe as props e states
+Montagem: componentWillMount > render > componentDidMoment
+Atualização: (Se for props começa daqui) componentWillReceiveProps -> (se só state, começa daqui) shouldComponnentUpdate -> Sim ou Não -> componentWillUpdate -> render -> componentDidUpdate
+Desmontagem: componentWillUnmount
+
+Outros métodos do ciclo de vida:
+    componentDidCatch: quando lançar alguma exceção
+    getDerivedStateFromProps
+    getSnapshotBeforeUpdate
+
+
+-=-=-=-=-= HOOKS -=-=-=-=-=
+
+São uma nova adição ao React 16.8. Eles premitem
+que você use o state e outros recursos do React sem escrever classes.
+
