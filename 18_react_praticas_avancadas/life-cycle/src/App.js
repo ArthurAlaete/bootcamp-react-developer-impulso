@@ -1,49 +1,44 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
+import { ThemeContext, themes } from './contexts/Theme';
 import Twitter from "./components/Twitter/index";
 import TwitterWithHooks from './components/TwitterWithHooks';
+import Card from './components/Card';
+import FragmentComponent from './components/FragmentComponent';
+import RenderProps from './components/RenderProps/index'
+import TypeChecking from './components/TypeChecking';
+import RefsAndDOM from './components/RefsAndDOM';
 
-class App extends Component {
 
-  constructor() {
-    super()
+const App  = () => {
 
-    this.state = {
-      posts: [
-        {
-          title: 'Título',
-          descriptio: 'Descrição'
-        },
-        {
-          title: 'Título 2',
-          descriptio: 'Descrição 2'
-        },
-      ],
-      loading: false,
-      actived: true,
-    }
-  }
+    const [token, setToken] = useState('');
 
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({ loading: true })
-    }, 3000);
-  }
+    const handleClick = () => alert('Iniciando...')
 
-  onRemove = () => {
-    this.setState({ actived: false })
-  }
+    useEffect(() => {
+      setTimeout(() => {
+        setToken('8qq89haj0hu98whegayuecvq8')
+      }, 4000)
+    }, [setToken])
 
-  render() {
     return (
-      <div>
-          <button onClick={this.onRemove}>Remove Component</button>
-          {this.state.actived && (
-            // <Twitter posts={this.state.posts} loading={this.state.loading}/>
-            <TwitterWithHooks posts={this.state.posts} loading={this.state.loading}/>
-          )}
-      </div>
+      <ThemeContext.Provider value={{...themes, token: token }}>
+        {/* <Twitter posts={this.state.posts} loading={this.state.loading}/>
+        <TwitterWithHooks posts={this.state.posts} loading={this.state.loading}/> */}
+        {/* <Card /> */}
+        {/* <FragmentComponent /> */}
+        {/* <ErrorBoundaryComponent /> */}
+        {/* <RenderProps /> */}
+        {/* <TypeChecking 
+          cats={undefined}
+          dogs={2}
+          costumerName='ArthurAlaete'
+          handleClick={handleClick}
+          status='status2'
+        /> */}
+        <RefsAndDOM />
+      </ThemeContext.Provider>
     );
-  }
 
 }
 
