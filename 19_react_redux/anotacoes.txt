@@ -1,0 +1,11 @@
+Sobre REDUX:
+
+Store: responsável por conter as informações da nossa aplicação e disponibilizar elas sempre que necessário.
+
+Actions: São funções puras ( funções puras: dadas as mesmas entradas, devem retornar as mesmas saídas) 
+que vão retornar um objeto que irá conter um TYPE que ele será escutado posteriormente pelo seu REDUCER, que irá retornar um payload
+ou algum outro objeto que tenhamos necessidade para adicionarmos a nossa Store.
+
+
+Reducers: São funções puras que contém um state inicial e que recebebem a Action que foi disparada.
+Os reducers escutam as Actions e fazer o controle internamente disso para armazenar na Store.
