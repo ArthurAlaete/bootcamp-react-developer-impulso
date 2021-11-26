@@ -1,4 +1,4 @@
-# Bootcamp da DIO
+# React Developer - Bootcamp da DIO
 Repositório para organização de arquivos, desafios e links úteis do Bootcamp da DIO
 
 ## Links úteis
