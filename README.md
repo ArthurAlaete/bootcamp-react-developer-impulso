@@ -1,5 +1,5 @@
-# React Developer - Bootcamp da DIO
-Repositório para organização de arquivos, desafios e links úteis do Bootcamp da DIO
+# React Developer - Bootcamp Impulso
+Repositório para organização de arquivos, desafios e links úteis do Bootcamp de React gerido pela empresa Impulso e disponibilizada na plataforma da Digital Innovation One. 
 
 ## Links úteis
 
